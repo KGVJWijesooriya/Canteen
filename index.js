@@ -5,7 +5,7 @@ const UserModel = require('./model/user_model')
 const port = 3000;
 
 app.get('/',(req,res)=>{
-    res.send("Hello Pemini")
+    // res.send("Hello Pemini")
 });
 
 app.listen(port,()=>{
