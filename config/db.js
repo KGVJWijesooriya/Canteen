@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-
-const connection = mongoose.createConnection('mongodb+srv://vimukthi200007:Vimukthi27@canteen.kvebs8e.mongodb.net/?retryWrites=true&w=majority').on('open',()=>{
+require('dotenv').config();
+const connection = mongoose.createConnection(process.env.MDBCONNECTION).on('open',()=>{
     console.log("MongoDb Connected");
 }).on('error',()=>{
     console.log("MongoDB Connection error");
