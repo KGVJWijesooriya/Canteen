@@ -2,7 +2,7 @@ const app = require('./app');
 const db = require('./config/db');
 const UserModel = require('./model/user_model');
 
-const port = process.env.PORT || 10000; // Use the provided PORT or default to 3000
+const port = process.env.PORT || 3000; 
 
 app.get('/', (req, res) => {
     res.send("Hello Pemini")
